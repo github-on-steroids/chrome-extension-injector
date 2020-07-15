@@ -1,0 +1,32 @@
+{
+  "name": "chrome-extension-injector",
+  "version": "1.0.0",
+  "description": "just another master branch",
+  "main": "extension",
+  "private": "true",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github-on-steroids/chrome-extension-injector.git"
+  },
+  "keywords": [],
+  "author": "anikethsaha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github-on-steroids/chrome-extension-injector/issues"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^3.6.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.7",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "homepage": "https://github.com/github-on-steroids/chrome-extension-injector#readme"
+}
