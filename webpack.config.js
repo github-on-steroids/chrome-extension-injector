@@ -10,6 +10,11 @@ module.exports = {
     // options: './src/options',
     background: './src/background.ts',
     content: './src/content.ts',
+    'editor.worker': 'monaco-editor/esm/vs/editor/editor.worker.js',
+    'json.worker': 'monaco-editor/esm/vs/language/json/json.worker',
+    'css.worker': 'monaco-editor/esm/vs/language/css/css.worker',
+    'html.worker': 'monaco-editor/esm/vs/language/html/html.worker',
+    'ts.worker': 'monaco-editor/esm/vs/language/typescript/ts.worker',
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -26,11 +31,23 @@ module.exports = {
     ]),
   ],
   output: {
+    globalObject: 'self',
     path: path.join(__dirname, 'extension'),
     filename: '[name].js',
   },
+  resolve: {
+    extensions: ['.ts', '.js', '.json'],
+  },
   module: {
     rules: [
+      {
+        test: /\.ttf$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
       {
         test: /\.ts?$/,
         loader: 'ts-loader',

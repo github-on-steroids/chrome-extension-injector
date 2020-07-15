@@ -6,7 +6,8 @@
   "content_scripts": [
     {
       "js": ["content.js", "jquery.js"],
-      "matches": ["https://github.com/*"]
+      "matches": ["https://github.com/*"],
+      "run_at": "document_end"
     }
   ],
   "background": {
