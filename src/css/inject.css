@@ -1,0 +1,6 @@
+/** styles for "Launch input steroids" button */
+#__onSteroid__inject_button {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
