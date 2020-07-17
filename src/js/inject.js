@@ -3,7 +3,6 @@ chrome.extension.sendMessage({}, function (response) {
     if (document.readyState === "complete") {
       clearInterval(readyStateCheckInterval);
       console.log("Loaded Inject Script");
-      generateInjectButton();
     }
   }, 10);
 });
