@@ -20,9 +20,7 @@
       "matches": ["https://*.github.com/*"],
       "js": [
         "src/js/jquery.js",
-        "src/js/emojis.js",
         "src/js/worker.js",
-        "src/js/constants.js",
         "src/js/listeners.js",
         "src/js/inject.js"
       ]

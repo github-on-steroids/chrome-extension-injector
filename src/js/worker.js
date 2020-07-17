@@ -4,13 +4,6 @@
  * @returns void
  */
 function generateExtendedInterface(targetElement) {
-  if (!window.shown) {
-    alert(
-      "This component can used advanced markdown features. To enable them, open the github-on-steroids chrome extension, we'll take care of the rest"
-    );
-    window.shown = true;
-  }
-
   /** listening for messages from popup */
   chrome.runtime.onMessage.addListener(function (request, sender) {
     targetElement.val(request.message);
