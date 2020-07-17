@@ -10,11 +10,7 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "page_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "page action demo"
-  },
-  "permissions": ["clipboardRead", "clipboardWrite", "tabs"],
+  "permissions": ["clipboardRead", "clipboardWrite", "tabs", "storage"],
   "content_scripts": [
     {
       "matches": ["https://*.github.com/*"],
@@ -31,5 +27,9 @@
         "src/js/inject.js"
       ]
     }
-  ]
+  ],
+  "browser_action": {
+    "default_icon": "./icons/icon16.png",
+    "default_popup": "./MirrorMark/index.html"
+  }
 }

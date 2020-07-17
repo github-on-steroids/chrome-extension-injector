@@ -14,14 +14,17 @@ function generateInjectButton() {
  * @returns void
  */
 function generateExtendedInterface(targetElement) {
-  const userWants = confirm(
-    "We can enhance this input component, do you want us to do it ?"
-  );
-
-  if (userWants) {
-    console.log("Opening Extended Interface on", targetElement);
-    targetElement.val("This came from script");
+  if (!window.shown) {
+    alert(
+      "This component can used advanced markdown features. To enable them, open the github-on-steroids chrome extension, we'll take care of the rest"
+    );
+    window.shown = true;
   }
+
+  /** listening for messages from popup */
+  chrome.runtime.onMessage.addListener(function (request, sender) {
+    targetElement.val(request.message);
+  });
 }
 
 /**
