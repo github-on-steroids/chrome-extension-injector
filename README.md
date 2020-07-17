@@ -40,5 +40,7 @@
 - [MirrorMark](https://github.com/musicbed/mirrormark) by @musicbed
 - [extensionizr](https://extensionizr.com/)
 - [Github Project Board for management](https://github.com/orgs/github-on-steroids/projects/1)
+- Webpack
+- Typescript
 - More such works to be published soon via[https://github.com/github-on-steroids](https://github.com/github-on-steroids)
 - Original Artwork by @YashKumarVerma using [Canva](https://www.canva.com/) under [Github Students Developer Pack](https://education.github.com/pack)
