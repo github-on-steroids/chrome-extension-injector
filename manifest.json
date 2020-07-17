@@ -1,8 +1,8 @@
 {
-  "name": "chrome-extension-injector",
+  "name": "Github on Steroids",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension plays around with github's input components",
+  "description": "Time to markdown-ise the entire world",
   "homepage_url": "https://github-on-steroids.github.io/",
   "icons": {
     "16": "icons/icon16.png",
@@ -20,9 +20,7 @@
       "matches": ["https://*.github.com/*"],
       "js": [
         "src/js/jquery.js",
-        "src/js/emojis.js",
         "src/js/worker.js",
-        "src/js/constants.js",
         "src/js/listeners.js",
         "src/js/inject.js"
       ]
